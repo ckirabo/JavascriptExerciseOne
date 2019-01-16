@@ -1,0 +1,81 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+
+<script>
+
+   //creating a script
+   alert("Hello World!");
+   
+   //variables
+   let a = "AYYYYYY\n";
+   alert(a);
+   console.log(a);
+   document.write(a);
+   
+   //functions 1
+   function square(a){
+   return a*a;
+   };
+   console.log(square(4));
+   
+   
+   //function 2
+   function sum(a,b,c){
+   return a + b + c;
+   };
+   console.log(sum(1,2,3));
+   
+   
+   //variables 2 
+   
+  
+   let person ={
+   name:"Cheryl",
+   age: 22,
+   occupation:"Comic Book Artist"
+   };
+   console.log(person);
+   
+   person.name= "Timothy";
+  
+   
+   //events 1 
+ 
+    
+    function increase(){
+	console.log(person.age++);
+	}
+	increase();
+
+
+	//Conditionals 1
+	
+	function ageChecker(p){
+	
+	if(p.age > 20 && p.age < 40){
+	console.log("true");
+	
+	}
+	else{
+	console.log("false");
+	}
+	
+  }
+     ageChecker(person);
+   
+   
+</script>
+
+<p id="person"></p>
+
+   
+<button onClick="increase()">Age++</button>
+</body>
+
+</html>

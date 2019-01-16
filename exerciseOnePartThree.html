@@ -1,0 +1,76 @@
+<html>
+<head> </head>
+
+<body>
+<script>
+
+//STRINGS 1
+
+let string = "He said 'My name is Elliott' ";
+document.write(string);
+
+document.write("<br>"); // new line
+
+function upperCaseText(string){
+
+let upperString = string.toUpperCase();
+  document.write(upperString);
+}
+
+upperCaseText(string);
+
+//STRINGS 2
+document.write("<br>"); 
+
+let word = "hi";
+let num = 5;
+
+document.write(word+num);
+
+
+//Arrays 1/ Strings 3 
+document.write("<br>");
+
+let arrayA = ["I" , "like" , "food"];
+
+
+function printArray(a){
+for (let i = 0; i < a.length; i++){
+document.write(a[i] + " ");
+}
+}
+
+printArray(arrayA);
+
+document.write("<br>"); 
+arrayA.push("yaaay");
+printArray(arrayA);
+
+document.write("<br>"); 
+arrayA.pop();
+printArray(arrayA);
+
+//ITERATION 1 & 2 
+
+document.write("<br>"); 
+function increment(){
+
+for(let i = 1; i <= 10; i++){
+
+//document.write(i + " ");
+ if(i%2 == 0){
+ document.write(i + " ");
+ }
+
+}
+
+}
+
+increment();
+
+
+
+</script>
+</body>
+
+</html>

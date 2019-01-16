@@ -1,0 +1,60 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+<form>
+<input type="text" id="firstName" value=""/>
+<input type="text" id="age" value=""/>
+<input type="text" id="occupation" value=""/>
+</form>
+
+<script>
+
+
+
+
+function createPerson(){
+
+let fName = document.getElementById("firstName").value;
+let age = document.getElementById("age").value;
+let occup = document.getElementById("occupation").value;
+
+let person = {
+name: fName,
+age : age,
+occupation : occup
+};
+
+ 
+
+}
+
+function editPerson(){
+let fName = document.getElementById("firstName").value;
+let age = document.getElementById("age").value;
+let occup = document.getElementById("occupation").value;
+
+
+/*
+person.name = fName;
+person.age = age;
+person.occupation = occup;
+*/
+console.log(person);
+
+}
+
+</script>
+
+
+<button onClick="createPerson()" id="Button">Create Person</button>
+<button onClick="editPerson()" id="Button">Edit Person</button>
+
+</body>
+
+
+
+</html>
