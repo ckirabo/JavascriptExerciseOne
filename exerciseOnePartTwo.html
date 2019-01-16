@@ -14,6 +14,12 @@
 <script>
 
 
+let person = {
+name: "",
+age : "",
+occupation : ""
+};
+
 
 
 function createPerson(){
@@ -22,13 +28,12 @@ let fName = document.getElementById("firstName").value;
 let age = document.getElementById("age").value;
 let occup = document.getElementById("occupation").value;
 
-let person = {
-name: fName,
-age : age,
-occupation : occup
-};
+person.name = fName;
+person.age = age;
+person.occupation = occup;
 
- 
+console.log(person);
+
 
 }
 
@@ -37,13 +42,12 @@ let fName = document.getElementById("firstName").value;
 let age = document.getElementById("age").value;
 let occup = document.getElementById("occupation").value;
 
-
-/*
 person.name = fName;
 person.age = age;
 person.occupation = occup;
-*/
+
 console.log(person);
+
 
 }
 
